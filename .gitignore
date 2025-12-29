@@ -3,3 +3,4 @@
 .svn
 branches
 node_modules
+/vendor

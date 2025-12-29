@@ -1,23 +1,41 @@
 {
-    "name": "johannheyne/advanced-custom-fields-table-field",
+    "name": "municipio/wp-plugin-advanced-custom-fields-table-field",
     "description": "Table field for ACF",
     "type": "wordpress-muplugin",
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Johann Heyne",
             "email": "mail@johannheyne.de"
-        }
-    ],
-    "minimum-stability" : "stable",
-    "repositories": [
-        {
-            "type":"composer",
-            "url":"https://packagist.org"
         },
         {
-            "type":"composer",
-            "url":"https://wpackagist.org"
+            "name": "Sebastian Thulin",
+            "email": "sebastian.thulin@helsingborg.se"
+        },
+        {
+            "name": "Niclas Norin",
+            "email": "niclas.norin@helsingborg.se"
+        },
+        {
+            "name": "Whitespace",
+            "email": "code@whitespace.se"
         }
-    ]
+    ],
+    "require": {
+        "composer/installers": "^2.2"
+    },
+    "extra": {
+        "installer-name": "advanced-custom-fields-table-field",
+        "installer-paths": {
+            "vendor/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
 }
